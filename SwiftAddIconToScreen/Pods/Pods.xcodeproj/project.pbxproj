@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11C9E666BD54BEACA09BAE5321D390E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1404CF7259D99333F60C96CCFF9B9714 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD839E7289601E3D5D310C5566EA492 /* Socket.swift */; };
+		173CC6AD6334A21B6E570256573471B8 /* Swifter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B72B6BB4701F5406B6939C47CC60324B /* Swifter-dummy.m */; };
+		25F5D821614EED49E47CC1816057F3D9 /* Scopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905AAD730EF2F508B34B9F6FB90DFCA5 /* Scopes.swift */; };
+		2A1C57B3A5D16F19AF0B0E1FF5450294 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CA8425DBCDED92A9E07F1232F3329F /* HttpRequest.swift */; };
+		3E2F0824381F0903E32524E7B700B3F1 /* Socket+Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B77EE0A873A14E5FBEE62A70B3FD9 /* Socket+Server.swift */; };
+		45299BEC6F8E864DAA4D3F46CC4350D0 /* Errno.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66AA8A386A8677A84EE4EABADE15A2A /* Errno.swift */; };
+		50A048D46D949E07ABE066001C3C88D9 /* Pods-SwiftAddIconToScreen-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E35AEA4FB2D0607E99189214D52987C /* Pods-SwiftAddIconToScreen-dummy.m */; };
+		50FDCB67F7C77F6A9256A9AEAFA2C159 /* String+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA9BE4872FC80146E02189B48FE9A8 /* String+Misc.swift */; };
+		7D36C308C180A9E0135AFD3BE2791EA3 /* Pods-SwiftAddIconToScreen-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68216EC3DF118049574403A0532EAF7A /* Pods-SwiftAddIconToScreen-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80847029C583EB65720510EF410EF906 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D5C8120D67F10786FBD74BC23F9D24 /* HttpResponse.swift */; };
+		864FE0D2F740396DBA4D83AB6CEE3288 /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038A3DD0C1A4B3BD170042924FF31B5A /* Process.swift */; };
+		9D389666BAED5E01C8FBAC29307ADD44 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E758BDD098FBDBFBF42191AED863F0 /* Files.swift */; };
+		A714F43DEB2FBB3E858495FAFC1834E8 /* DemoServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1C94EDD35AC627D134E68C9036EC73 /* DemoServer.swift */; };
+		ADFD32817294069E030DDC1F237A4753 /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC1B19EC05A96EBAD9459BCF27BC165 /* HttpRouter.swift */; };
+		B6AF320FDE4CCF51C1DA4AA1AA655761 /* WebSockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3877343060F8607F449A73ACDEB9ECD /* WebSockets.swift */; };
+		BAB7E242206CAE29FAD22AC8F27ED36F /* HttpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED019A07394513C0CA60ABBC1EB877 /* HttpServer.swift */; };
+		BBD7D057ABBF433BBB5BED979D380045 /* String+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC548353F999EF18A0494BF933D99B1 /* String+File.swift */; };
+		BD71D6F472402826856FFC6B32B1F76D /* HttpServerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8596764A3A5A6F573565B6F216982DAE /* HttpServerIO.swift */; };
+		C5F44705AB9BD31622C0FE8097BDC6B6 /* HttpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1DAA83AC669442747C6C25E4351B59 /* HttpParser.swift */; };
+		CC3BB156E252DE449B4D37481C903C81 /* Socket+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FCF383143611F10791AA52057D8594 /* Socket+File.swift */; };
+		CF686D2E7D8EF669D3B8123E4830462C /* MimeTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D323B73D08BADB340592D1DF3BA4A87A /* MimeTypes.swift */; };
+		DCB9AB96C4F8321CA06ED087C4913192 /* String+SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1950E30FCBD7A4391B843AF746539E8A /* String+SHA1.swift */; };
+		E141D686AD2C582DC31AE0717AE418A8 /* Swifter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63989CBE7B1B346B4BE7545B4EE6963D /* Swifter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F46B262D5C1EDD4DC29BD2FBC571C90A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FA8A911F3C7571BCE08BA599A170C6A1 /* String+BASE64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519C54C3C4FB3391C071C07DD307B055 /* String+BASE64.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5DB1CF966B53F0BF1E8BAA9CCC28B0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA65059E808391E31616CB3E015A6B24;
+			remoteInfo = Swifter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		038A3DD0C1A4B3BD170042924FF31B5A /* Process.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Process.swift; path = XCode/Sources/Process.swift; sourceTree = "<group>"; };
+		063BC6C79ECA8C13708ED7D50501E3C9 /* Pods-SwiftAddIconToScreen-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftAddIconToScreen-acknowledgements.plist"; sourceTree = "<group>"; };
+		15FDD6228D1F96EFD6CF03F0F058CFFA /* Pods-SwiftAddIconToScreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftAddIconToScreen.release.xcconfig"; sourceTree = "<group>"; };
+		1950E30FCBD7A4391B843AF746539E8A /* String+SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+SHA1.swift"; path = "XCode/Sources/String+SHA1.swift"; sourceTree = "<group>"; };
+		2336353A340D88B28101E39E8F32369F /* Swifter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swifter-prefix.pch"; sourceTree = "<group>"; };
+		25F8BC1EAED9E85C5E49C7359C6F8454 /* Swifter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Swifter-Info.plist"; sourceTree = "<group>"; };
+		2FE26926AF3D7CCBA0E6F8B0DF2E6D3F /* Swifter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Swifter.release.xcconfig; sourceTree = "<group>"; };
+		4A3C032AC931E2D1D7D34CF773762F38 /* Pods-SwiftAddIconToScreen-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftAddIconToScreen-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4CC1B19EC05A96EBAD9459BCF27BC165 /* HttpRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpRouter.swift; path = XCode/Sources/HttpRouter.swift; sourceTree = "<group>"; };
+		519C54C3C4FB3391C071C07DD307B055 /* String+BASE64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+BASE64.swift"; path = "XCode/Sources/String+BASE64.swift"; sourceTree = "<group>"; };
+		57ED019A07394513C0CA60ABBC1EB877 /* HttpServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpServer.swift; path = XCode/Sources/HttpServer.swift; sourceTree = "<group>"; };
+		63989CBE7B1B346B4BE7545B4EE6963D /* Swifter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swifter-umbrella.h"; sourceTree = "<group>"; };
+		68216EC3DF118049574403A0532EAF7A /* Pods-SwiftAddIconToScreen-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftAddIconToScreen-umbrella.h"; sourceTree = "<group>"; };
+		691A5E67C114EFBF35E7CEB59F980FC6 /* Swifter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Swifter.debug.xcconfig; sourceTree = "<group>"; };
+		6E35AEA4FB2D0607E99189214D52987C /* Pods-SwiftAddIconToScreen-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftAddIconToScreen-dummy.m"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8596764A3A5A6F573565B6F216982DAE /* HttpServerIO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpServerIO.swift; path = XCode/Sources/HttpServerIO.swift; sourceTree = "<group>"; };
+		85B9B0045762AAAC5C6A802615E9F2FD /* Pods_SwiftAddIconToScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftAddIconToScreen.framework; path = "Pods-SwiftAddIconToScreen.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		905AAD730EF2F508B34B9F6FB90DFCA5 /* Scopes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scopes.swift; path = XCode/Sources/Scopes.swift; sourceTree = "<group>"; };
+		9D1DAA83AC669442747C6C25E4351B59 /* HttpParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpParser.swift; path = XCode/Sources/HttpParser.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A64B4121269C419925BDB44E9034AA79 /* Pods-SwiftAddIconToScreen-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftAddIconToScreen-Info.plist"; sourceTree = "<group>"; };
+		AE1C94EDD35AC627D134E68C9036EC73 /* DemoServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DemoServer.swift; path = XCode/Sources/DemoServer.swift; sourceTree = "<group>"; };
+		AEC548353F999EF18A0494BF933D99B1 /* String+File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+File.swift"; path = "XCode/Sources/String+File.swift"; sourceTree = "<group>"; };
+		B09D9EC79C4957DB74CCEFA50CFCCAE6 /* Pods-SwiftAddIconToScreen.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftAddIconToScreen.modulemap"; sourceTree = "<group>"; };
+		B0E758BDD098FBDBFBF42191AED863F0 /* Files.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Files.swift; path = XCode/Sources/Files.swift; sourceTree = "<group>"; };
+		B72B6BB4701F5406B6939C47CC60324B /* Swifter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Swifter-dummy.m"; sourceTree = "<group>"; };
+		C3877343060F8607F449A73ACDEB9ECD /* WebSockets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSockets.swift; path = XCode/Sources/WebSockets.swift; sourceTree = "<group>"; };
+		D1D31643281177E797CE41CB8E007B47 /* Pods-SwiftAddIconToScreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftAddIconToScreen.debug.xcconfig"; sourceTree = "<group>"; };
+		D323B73D08BADB340592D1DF3BA4A87A /* MimeTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MimeTypes.swift; path = XCode/Sources/MimeTypes.swift; sourceTree = "<group>"; };
+		E3CA8425DBCDED92A9E07F1232F3329F /* HttpRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpRequest.swift; path = XCode/Sources/HttpRequest.swift; sourceTree = "<group>"; };
+		E3D5C8120D67F10786FBD74BC23F9D24 /* HttpResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpResponse.swift; path = XCode/Sources/HttpResponse.swift; sourceTree = "<group>"; };
+		E5BA9BE4872FC80146E02189B48FE9A8 /* String+Misc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Misc.swift"; path = "XCode/Sources/String+Misc.swift"; sourceTree = "<group>"; };
+		E66AA8A386A8677A84EE4EABADE15A2A /* Errno.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errno.swift; path = XCode/Sources/Errno.swift; sourceTree = "<group>"; };
+		E68B77EE0A873A14E5FBEE62A70B3FD9 /* Socket+Server.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Socket+Server.swift"; path = "XCode/Sources/Socket+Server.swift"; sourceTree = "<group>"; };
+		E7E98885A0FEF49E9EE8975449969BEB /* Swifter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Swifter.framework; path = Swifter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B1E8852ED99F618DFE9A6DD32E682A /* Pods-SwiftAddIconToScreen-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftAddIconToScreen-frameworks.sh"; sourceTree = "<group>"; };
+		EA173413E3B0513AC2DF6EAD5BEB22B9 /* Swifter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Swifter.modulemap; sourceTree = "<group>"; };
+		F1FCF383143611F10791AA52057D8594 /* Socket+File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Socket+File.swift"; path = "XCode/Sources/Socket+File.swift"; sourceTree = "<group>"; };
+		FDD839E7289601E3D5D310C5566EA492 /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = XCode/Sources/Socket.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DE3D5C04FA19BB2916818B7E28A40A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F46B262D5C1EDD4DC29BD2FBC571C90A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70A02B3B11AA8ED5DAD006E23A96C5BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C9E666BD54BEACA09BAE5321D390E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13DB9ECC5CB663CD0C95C1F66CF68C05 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA173413E3B0513AC2DF6EAD5BEB22B9 /* Swifter.modulemap */,
+				B72B6BB4701F5406B6939C47CC60324B /* Swifter-dummy.m */,
+				25F8BC1EAED9E85C5E49C7359C6F8454 /* Swifter-Info.plist */,
+				2336353A340D88B28101E39E8F32369F /* Swifter-prefix.pch */,
+				63989CBE7B1B346B4BE7545B4EE6963D /* Swifter-umbrella.h */,
+				691A5E67C114EFBF35E7CEB59F980FC6 /* Swifter.debug.xcconfig */,
+				2FE26926AF3D7CCBA0E6F8B0DF2E6D3F /* Swifter.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Swifter";
+			sourceTree = "<group>";
+		};
+		30906D9250E41A9D77353FF4C3CD35AB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8CC61D5DD8443E510DA4D901763FAB7 /* Pods-SwiftAddIconToScreen */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		312D8828862BECAF102700B265A82915 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85B9B0045762AAAC5C6A802615E9F2FD /* Pods_SwiftAddIconToScreen.framework */,
+				E7E98885A0FEF49E9EE8975449969BEB /* Swifter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50A8799198653FAC954E7817BAEF8EE5 /* Swifter */ = {
+			isa = PBXGroup;
+			children = (
+				AE1C94EDD35AC627D134E68C9036EC73 /* DemoServer.swift */,
+				E66AA8A386A8677A84EE4EABADE15A2A /* Errno.swift */,
+				B0E758BDD098FBDBFBF42191AED863F0 /* Files.swift */,
+				9D1DAA83AC669442747C6C25E4351B59 /* HttpParser.swift */,
+				E3CA8425DBCDED92A9E07F1232F3329F /* HttpRequest.swift */,
+				E3D5C8120D67F10786FBD74BC23F9D24 /* HttpResponse.swift */,
+				4CC1B19EC05A96EBAD9459BCF27BC165 /* HttpRouter.swift */,
+				57ED019A07394513C0CA60ABBC1EB877 /* HttpServer.swift */,
+				8596764A3A5A6F573565B6F216982DAE /* HttpServerIO.swift */,
+				D323B73D08BADB340592D1DF3BA4A87A /* MimeTypes.swift */,
+				038A3DD0C1A4B3BD170042924FF31B5A /* Process.swift */,
+				905AAD730EF2F508B34B9F6FB90DFCA5 /* Scopes.swift */,
+				FDD839E7289601E3D5D310C5566EA492 /* Socket.swift */,
+				F1FCF383143611F10791AA52057D8594 /* Socket+File.swift */,
+				E68B77EE0A873A14E5FBEE62A70B3FD9 /* Socket+Server.swift */,
+				519C54C3C4FB3391C071C07DD307B055 /* String+BASE64.swift */,
+				AEC548353F999EF18A0494BF933D99B1 /* String+File.swift */,
+				E5BA9BE4872FC80146E02189B48FE9A8 /* String+Misc.swift */,
+				1950E30FCBD7A4391B843AF746539E8A /* String+SHA1.swift */,
+				C3877343060F8607F449A73ACDEB9ECD /* WebSockets.swift */,
+				13DB9ECC5CB663CD0C95C1F66CF68C05 /* Support Files */,
+			);
+			name = Swifter;
+			path = Swifter;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				EBAB82139382F4D963601248B150A1B8 /* Pods */,
+				312D8828862BECAF102700B265A82915 /* Products */,
+				30906D9250E41A9D77353FF4C3CD35AB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBAB82139382F4D963601248B150A1B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50A8799198653FAC954E7817BAEF8EE5 /* Swifter */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8CC61D5DD8443E510DA4D901763FAB7 /* Pods-SwiftAddIconToScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B09D9EC79C4957DB74CCEFA50CFCCAE6 /* Pods-SwiftAddIconToScreen.modulemap */,
+				4A3C032AC931E2D1D7D34CF773762F38 /* Pods-SwiftAddIconToScreen-acknowledgements.markdown */,
+				063BC6C79ECA8C13708ED7D50501E3C9 /* Pods-SwiftAddIconToScreen-acknowledgements.plist */,
+				6E35AEA4FB2D0607E99189214D52987C /* Pods-SwiftAddIconToScreen-dummy.m */,
+				E8B1E8852ED99F618DFE9A6DD32E682A /* Pods-SwiftAddIconToScreen-frameworks.sh */,
+				A64B4121269C419925BDB44E9034AA79 /* Pods-SwiftAddIconToScreen-Info.plist */,
+				68216EC3DF118049574403A0532EAF7A /* Pods-SwiftAddIconToScreen-umbrella.h */,
+				D1D31643281177E797CE41CB8E007B47 /* Pods-SwiftAddIconToScreen.debug.xcconfig */,
+				15FDD6228D1F96EFD6CF03F0F058CFFA /* Pods-SwiftAddIconToScreen.release.xcconfig */,
+			);
+			name = "Pods-SwiftAddIconToScreen";
+			path = "Target Support Files/Pods-SwiftAddIconToScreen";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7E54E1BB4E4330142BCF07671F664D1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E141D686AD2C582DC31AE0717AE418A8 /* Swifter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCAF7FCE8FEBFF26C0E5D7D18B95708F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D36C308C180A9E0135AFD3BE2791EA3 /* Pods-SwiftAddIconToScreen-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CA65059E808391E31616CB3E015A6B24 /* Swifter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DBC78EE96B1DA4043C040FA152A0DF9 /* Build configuration list for PBXNativeTarget "Swifter" */;
+			buildPhases = (
+				7E54E1BB4E4330142BCF07671F664D1D /* Headers */,
+				1053D5FECF8941FA066FD551619E52FF /* Sources */,
+				70A02B3B11AA8ED5DAD006E23A96C5BD /* Frameworks */,
+				5271E707D9986844C5B84B6A2A889BA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swifter;
+			productName = Swifter;
+			productReference = E7E98885A0FEF49E9EE8975449969BEB /* Swifter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CADCEFA803E9C720973304C75FAC127E /* Pods-SwiftAddIconToScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DC01B9FB5321FCFFF72545A0F51BCE9 /* Build configuration list for PBXNativeTarget "Pods-SwiftAddIconToScreen" */;
+			buildPhases = (
+				CCAF7FCE8FEBFF26C0E5D7D18B95708F /* Headers */,
+				3E352AD43D4A4A8C2B74F512B45BF78B /* Sources */,
+				1DE3D5C04FA19BB2916818B7E28A40A4 /* Frameworks */,
+				20ECD08B0469354C2DCEC1AE8495687D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C3EA0533CDCD4E0B032803762110090 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftAddIconToScreen";
+			productName = "Pods-SwiftAddIconToScreen";
+			productReference = 85B9B0045762AAAC5C6A802615E9F2FD /* Pods_SwiftAddIconToScreen.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 312D8828862BECAF102700B265A82915 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CADCEFA803E9C720973304C75FAC127E /* Pods-SwiftAddIconToScreen */,
+				CA65059E808391E31616CB3E015A6B24 /* Swifter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20ECD08B0469354C2DCEC1AE8495687D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5271E707D9986844C5B84B6A2A889BA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1053D5FECF8941FA066FD551619E52FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A714F43DEB2FBB3E858495FAFC1834E8 /* DemoServer.swift in Sources */,
+				45299BEC6F8E864DAA4D3F46CC4350D0 /* Errno.swift in Sources */,
+				9D389666BAED5E01C8FBAC29307ADD44 /* Files.swift in Sources */,
+				C5F44705AB9BD31622C0FE8097BDC6B6 /* HttpParser.swift in Sources */,
+				2A1C57B3A5D16F19AF0B0E1FF5450294 /* HttpRequest.swift in Sources */,
+				80847029C583EB65720510EF410EF906 /* HttpResponse.swift in Sources */,
+				ADFD32817294069E030DDC1F237A4753 /* HttpRouter.swift in Sources */,
+				BAB7E242206CAE29FAD22AC8F27ED36F /* HttpServer.swift in Sources */,
+				BD71D6F472402826856FFC6B32B1F76D /* HttpServerIO.swift in Sources */,
+				CF686D2E7D8EF669D3B8123E4830462C /* MimeTypes.swift in Sources */,
+				864FE0D2F740396DBA4D83AB6CEE3288 /* Process.swift in Sources */,
+				25F5D821614EED49E47CC1816057F3D9 /* Scopes.swift in Sources */,
+				CC3BB156E252DE449B4D37481C903C81 /* Socket+File.swift in Sources */,
+				3E2F0824381F0903E32524E7B700B3F1 /* Socket+Server.swift in Sources */,
+				1404CF7259D99333F60C96CCFF9B9714 /* Socket.swift in Sources */,
+				FA8A911F3C7571BCE08BA599A170C6A1 /* String+BASE64.swift in Sources */,
+				BBD7D057ABBF433BBB5BED979D380045 /* String+File.swift in Sources */,
+				50FDCB67F7C77F6A9256A9AEAFA2C159 /* String+Misc.swift in Sources */,
+				DCB9AB96C4F8321CA06ED087C4913192 /* String+SHA1.swift in Sources */,
+				173CC6AD6334A21B6E570256573471B8 /* Swifter-dummy.m in Sources */,
+				B6AF320FDE4CCF51C1DA4AA1AA655761 /* WebSockets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E352AD43D4A4A8C2B74F512B45BF78B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A048D46D949E07ABE066001C3C88D9 /* Pods-SwiftAddIconToScreen-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C3EA0533CDCD4E0B032803762110090 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Swifter;
+			target = CA65059E808391E31616CB3E015A6B24 /* Swifter */;
+			targetProxy = F5DB1CF966B53F0BF1E8BAA9CCC28B0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2D0E4D19ABCAB49B5E71033190552F75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 691A5E67C114EFBF35E7CEB59F980FC6 /* Swifter.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Swifter/Swifter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Swifter/Swifter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Swifter/Swifter.modulemap";
+				PRODUCT_MODULE_NAME = Swifter;
+				PRODUCT_NAME = Swifter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CD13D1798FC7283C74CA3D3AFEE9D7C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FE26926AF3D7CCBA0E6F8B0DF2E6D3F /* Swifter.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Swifter/Swifter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Swifter/Swifter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Swifter/Swifter.modulemap";
+				PRODUCT_MODULE_NAME = Swifter;
+				PRODUCT_NAME = Swifter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D599B7CD283FBD1CD8E7D14AAC5D9E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15FDD6228D1F96EFD6CF03F0F058CFFA /* Pods-SwiftAddIconToScreen.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftAddIconToScreen/Pods-SwiftAddIconToScreen-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftAddIconToScreen/Pods-SwiftAddIconToScreen.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8E9FBC8C057BF0B8AA705A832567D61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1D31643281177E797CE41CB8E007B47 /* Pods-SwiftAddIconToScreen.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftAddIconToScreen/Pods-SwiftAddIconToScreen-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftAddIconToScreen/Pods-SwiftAddIconToScreen.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DC01B9FB5321FCFFF72545A0F51BCE9 /* Build configuration list for PBXNativeTarget "Pods-SwiftAddIconToScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E9FBC8C057BF0B8AA705A832567D61 /* Debug */,
+				D599B7CD283FBD1CD8E7D14AAC5D9E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DBC78EE96B1DA4043C040FA152A0DF9 /* Build configuration list for PBXNativeTarget "Swifter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D0E4D19ABCAB49B5E71033190552F75 /* Debug */,
+				CD13D1798FC7283C74CA3D3AFEE9D7C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
